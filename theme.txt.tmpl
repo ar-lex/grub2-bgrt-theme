@@ -1,0 +1,38 @@
+title-text: ""
+desktop-color: "#${BACK_COLOR}"
+terminal-font: "Terminal Regular ${TERMINAL_FONT_SIZE}"
+terminal-left: "50"
+terminal-top: "100%-530"
+terminal-width: "100%-100"
+terminal-height: "480"
+terminal-border: "0"
++ progress_bar {
+    id = "__timeout__"
+    width = ${BAR_WIDTH}
+    height = ${BAR_HEIGHT}
+    left = 50%-${BAR_WIDTH_HALF}
+    top = 90%-${BAR_HEIGHT_HALF}
+    show_text = false
+    bar_style       = "bar_*.png"
+    highlight_style = "bar_hl_*.png"
+}
++ image {
+    left = ${IMAGE_LEFT}
+    top = ${IMAGE_TOP}
+    file = "image.png"
+}
++ boot_menu {
+    left = 50%-512
+    width = 1024
+    top = 100%-384
+    height = 200
+    item_font = "Menu Regular ${MENU_FONT_SIZE}"
+    item_color = "#${ITEM_COLOR}"
+    selected_item_font = "Menu Regular ${MENU_FONT_SIZE}"
+    selected_item_color= "#${SELECTION_COLOR}"
+    item_height = 30
+    item_padding = 0
+    item_icon_space = 0
+    item_spacing = 1
+    scrollbar = false
+}
